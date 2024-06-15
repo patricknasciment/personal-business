@@ -3,9 +3,140 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa&display=swap" rel="stylesheet">
     <title>Graciane Cleaner</title>
   </head>
+  <style>
+    html, body, div, span, applet, object, iframe,
+    h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+    a, abbr, acronym, address, big, cite, code,
+    del, dfn, em, img, ins, kbd, q, s, samp,
+    small, strike, strong, sub, sup, tt, var,
+    b, u, i, center,
+    dl, dt, dd, ol, ul, li,
+    fieldset, form, label, legend,
+    table, caption, tbody, tfoot, thead, tr, th, td,
+    article, aside, canvas, details, embed, 
+    figure, figcaption, footer, header, hgroup, 
+    menu, nav, output, ruby, section, summary,
+    time, mark, audio, video {
+      margin: 0;
+      padding: 0;
+      border: 0;
+      font-size: 100%;
+      font: inherit;
+      vertical-align: baseline;
+    }
+    /* HTML5 display-role reset for older browsers */
+    article, aside, details, figcaption, figure, 
+    footer, header, hgroup, menu, nav, section {
+      display: block;
+    }
+    body {
+      line-height: 1;
+    }
+    ol, ul {
+      list-style: none;
+    }
+    blockquote, q {
+      quotes: none;
+    }
+    blockquote:before, blockquote:after,
+    q:before, q:after {
+      content: '';
+      content: none;
+    }
+    table {
+      border-collapse: collapse;
+      border-spacing: 0;
+    }
+
+    h1 {
+      font-family: "Inter", sans-serif;
+      font-weight: 700;
+      font-size: 26px;
+      color: #363636;
+    }
+
+    h2 {
+      font-family: "Comfortaa", sans-serif;
+      font-optical-sizing: auto;
+      font-weight: 400;
+      font-style: normal;
+      color: #363636;
+      font-size: 14px;
+    }
+
+    .first-page {
+      height: 90vh;
+    }
+
+    .header {
+      display: flex;
+      column-gap: 1rem;
+      align-items: center;
+      justify-content: center;
+      padding-top: 10vh;
+    }
+
+    .icon {
+      width: 46px;
+    }
+
+    .button-whats {
+      text-decoration: none;
+      border-radius: 20px;
+      padding: 16px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 0;
+      color: white;
+      background-color: #427369;
+      height: 60px;
+      width: 260px;
+      gap: 16px;
+      cursor: pointer;
+      margin-bottom: 20px;
+      font-family: "Comfortaa", sans-serif;
+    }
+
+    .button-whats > img {
+      width: 32px;
+    }
+
+    .first-page {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      justify-content: space-between;
+      background-color: #B1EDE1;
+      background-image: url("imgs/background.jpg");
+      background-size: cover;
+      background-position: 65% 20%;
+      background-repeat: no-repeat;
+      width: 100%;
+      height: 95vh;
+      border-radius: 0 0 20px 20px;
+    }
+  </style>
   <body>
-    <h1>Hello World</h1>
+    <div class="first-page">
+      <div class="header">
+        <div>
+          <h1>Graciane Cleaners</h1>
+          <h2>Casa Impecável, Nossa Paixão!</h2>
+        </div>
+        <img class="icon" src="./imgs/broom.png"/>
+      </div>
+
+      <div class="button-header"> 
+        <button class="button-whats"> <img src="./imgs/mage_whatsapp.png"/>Envie um whats...</a>
+      </div>
+
+    </div>
   </body>
 </html>
